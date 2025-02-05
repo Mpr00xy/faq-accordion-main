@@ -27,8 +27,9 @@ body {
 .content{
     position: absolute;
     background-color: var(--White);
-    width: 500px;
-    height: 470px;
+    max-width: 500px;
+    min-width: 400px;
+    height: 500px;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -72,4 +73,16 @@ body {
 }
 .content .container .ele span:not(:first-of-type){
     display: none;
+}
+@media screen and (max-width: 412px) {
+   .content{
+    min-width: 350px;
+   }
+   .content .container .header h1{
+    font-size: 35px;
+   }
+   .content .container .header h1 img{
+    width: 30px;
+    vertical-align:baseline;
+   }
 }
